@@ -63,4 +63,6 @@ Execute the command for segmentation evaluation
 `python evaluation.py --net_Spine-DCAN --device cuda:0 --num_classes 12 --batch_size_eval 1 --save_fig False`
 
 Ensure that the results are stored in the **"result"** folder. Enable sample image generation by setting the parameter **save_fig** to _True_.
+# Contact
+send an email to the ma17866709638@163.com for further assistance.
 

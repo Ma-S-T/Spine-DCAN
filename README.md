@@ -1,7 +1,7 @@
 # Spine-DCAN
 
 [Spine-DCAN A Dual-Branch Context-Aware Network for Automatic Lumbar Spine Segmentation in MRI]<br/>
-[Shiteng Ma](https://github.com/Ma-S-T),
+[ShitengMa](https://github.com/Ma-S-T),
 
 ## Overview
 
@@ -9,9 +9,7 @@ Accurate segmentation of lumbar spine structures from magnetic resonance imaging
 
 ## Environment Setup
 
-Please set up an environment with python=3.11 and execute the provided command to install the necessary dependencies.
-
-Please be aware that the hd95 function in the _medpy = 0.3.0_ specifically requires _numpy = 1.23.5_. 
+Please set up an environment with python=3.11 and Install the necessary dependencies according to the following commands
 
 ```commandline
 pip install -r requirments.txt
@@ -19,7 +17,7 @@ pip install -r requirments.txt
 
 ## Download Dataset
 
-Please access [**SSMSpine Dataset**](https://github.com/jiasongchen/SSMSpine) and proceed to download the dataset:
+Please access [**Spine-DCAN Dataset**](https://github.com/jiasongchen/SSMSpine) and proceed to download the dataset:
 
 ## Prepare data
 

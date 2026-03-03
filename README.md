@@ -1,7 +1,7 @@
 # Spine-DCAN
 
 [Spine-DCAN A Dual-Branch Context-Aware Network for Automatic Lumbar Spine Segmentation in MRI]<br/>
-[Shiteng Ma](https://jiasongchen.github.io/),
+[Shiteng Ma](https://github.com/Ma-S-T),
 
 ## Overview
 

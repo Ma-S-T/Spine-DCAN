@@ -1,27 +1,11 @@
-# SymTC
+# Spine-DCAN
 
-[**SymTC: A Symbiotic Transformer-CNN Net for Instance Segmentation of Lumbar Spine MRI**](https://www.sciencedirect.com/science/article/abs/pii/S0010482524008801)<br/>
-[Jiasong Chen](https://jiasongchen.github.io/),
-[Linchen Qian](https://scholar.google.com/citations?user=cqAjbgQAAAAJ&hl=en&oi=sra),
-[Linhai Ma](https://sarielma.github.io/),
-[Timur Urakov](https://med.miami.edu/faculty/timur-urakov-md),
-[Weiyong Gu](https://people.miami.edu/profile/9d2998936f27f2b0daa8828b8a709d0c),
-[Liang Liang](https://liangbright.wordpress.com/)<br/>
+[Spine-DCAN A Dual-Branch Context-Aware Network for Automatic Lumbar Spine Segmentation in MRI]<br/>
+[Shiteng Ma](https://jiasongchen.github.io/),
 
 ## Overview
 
-Intervertebral disc disease, a prevalent ailment, frequently leads to intermittent or persistent low back pain,
-and diagnosing and assessing of this disease rely on accurate measurement of vertebral bone and intervertebral disc
-geometries from lumbar MR images. Deep neural network (DNN) models may assist clinicians with more efficient image
-segmentation of individual instances (disks and vertebrae) of the lumbar spine in an automated way, which is termed as instance image
-segmentation. In this work, we proposed SymTC, an innovative lumbar spine MR image segmentation model that combines the strengths of
-Transformer and Convolutional Neural Network (CNN). Specifically, we designed a parallel dual-path architecture to merge
-CNN layers and Transformer layers, and we integrated a novel position embedding into the self-attention module of Transformer,
-enhancing the utilization of positional information for more accurate segmentation. To further improves model performance, we
-introduced a new data augmentation technique to create synthetic yet realistic MR image dataset, named SSMSpine, which is made publicly available. We
-evaluated our SymTC and the other 15 existing image segmentation models on our private in-house dataset and the public SSMSpine dataset, using
-two metrics, Dice Similarity Coefficient and 95% Hausdorff Distance. The results show that our SymTC has the best performance for
-segmenting vertebral bones and intervertebral discs in lumbar spine MR images.
+Accurate segmentation of lumbar spine structures from magnetic resonance imaging (MRI) is a critical requirement for computer-aided diagnosis and quantitative assessment of spinal diseases. However, reliable automatic lumbar segmentation remains challenging due to complex anatomical morphology and significant inter-patient variability. To address these challenges, we propose a dual-branch context-aware network, termed Spine-DCAN, for automatic lumbar MRI segmentation.Spine-DCAN adopts a dual-branch encoder architecture in which a Dual-Branch Context Extraction (DBCE) module is incorporated at each stage to learn complementary feature representations. One branch employs residual convolutional encoding to preserve structural continuity, while the other integrates a Multi-scale Context Reweighting Module (MCRM) that selectively enhances spatial regions and channel features with rich information through multi-scale convolutional representations. Furthermore, a Hierarchical Feature Fusion Module (HFFM) is introduced between the encoder and decoder to integrate low-level spatial details with high-level semantic information, thereby mitigating information loss during feature reconstruction.The proposed method was evaluated on a manually annotated dataset consisting of 426 sagittal T2-weighted lumbar MRI images. Experimental results demonstrate that Spine-DCAN consistently outperforms several state-of-the-art segmentation methods, achieving an average Dice Similarity Coefficient (DSC) of 95.242% and an HD95 value of 2.870. These findings indicate that Spine-DCAN provides a robust and effective solution for automatic lumbar MRI segmentation.
 
 ## Environment Setup
 

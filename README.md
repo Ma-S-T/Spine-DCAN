@@ -47,53 +47,20 @@ Please partition the data from the downloaded **"Spine-DCAN"** into **Train**, *
 
 ## Train/Evaluation
 
-### Training SymTC Models
+### Training Spine-DCAN Models
 
 Execute the command to initiate the training of the model.
 
-`python train.py --net_name SymTC --num_classes 12 --max_epochs 500 --batch_size_train 3 --batch_size_eval 3 --base_lr 0.0001 --device cuda:0`
+`python train.py --net_name Spine-DCAN --num_classes 12 --max_epochs 500 --batch_size_train 3 --batch_size_eval 3 --base_lr 0.0001 --device cuda:0`
 
 Adjust the values for _max_epochs_, _batch_size_train_, _batch_size_eval_, _device_, and any other relevant parameters as necessary.
 
-The optimal model checkpoint **(best.pth)** will be stored in the **result/SymTC** directory.
 
 ### Model Evaluation
 
 Execute the command for segmentation evaluation
 
-`python evaluation.py --net_name SymTC --device cuda:0 --num_classes 12 --batch_size_eval 1 --save_fig False`
+`python evaluation.py --net_Spine-DCAN --device cuda:0 --num_classes 12 --batch_size_eval 1 --save_fig False`
 
 Ensure that the results are stored in the **"result"** folder. Enable sample image generation by setting the parameter **save_fig** to _True_.
 
-### Model Robust Evaluation
-
-Execute the command to assess the robustness of the model.
-
-`python robust_evaluation.py --net_name SymTC --device cuda:0 --num_classes 12 --batch_size_eval 1`
-
-The results will be logged in a file within the **robust** folder, and the generated sample images 
-will be saved under the **result/robustness_evaluation** directory.
-
-The shift directions are indicated as follows:
-0 -> Up, 1 -> Down, 2 -> Left, 3 -> Right
-
-
-## Reference
-
-* [TransUnet](https://github.com/Beckschen/TransUNet)
-* [Google ViT](https://github.com/google-research/vision_transformer)
-* [ViT-pytorch](https://github.com/jeonsworld/ViT-pytorch)
-* [segmentation_models.pytorch](https://github.com/qubvel/segmentation_models.pytorch)
-
-## Citations
-
-```
-@misc{chen2024symtc,
-      title={SymTC: A Symbiotic Transformer-CNN Net for Instance Segmentation of Lumbar Spine MRI}, 
-      author={Jiasong Chen and Linchen Qian and Linhai Ma and Timur Urakov and Weiyong Gu and Liang Liang},
-      year={2024},
-      eprint={2401.09627},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
-}
-```

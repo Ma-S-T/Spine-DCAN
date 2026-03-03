@@ -17,13 +17,11 @@ pip install -r requirments.txt
 
 ## Download Dataset
 
-Please access [**Spine-DCAN Dataset**](https://github.com/jiasongchen/SSMSpine) and proceed to download the dataset:
+Please access [**Spine-DCAN Dataset**](https://github.com/Ma-S-T/Spine-DCAN-Dateset) and proceed to download the dataset:
 
 ## Prepare data
 
-Please partition the data from the downloaded **"SSMSPine_Train"** into **Train** and **Vali** folder. 
-Place these folders, along with the data in **"SSMSpine_Test"** to **Test** folder , within the **"dataset"** folder, maintaining the specified structure.
-
+Please partition the data from the downloaded **"Spine-DCAN"** into **Train**, **Vali** and **Test** folder. 
 
 ```bash
 ├── dataset(old)(old)

@@ -24,7 +24,7 @@ Please access [**Spine-DCAN Dataset**](https://github.com/Ma-S-T/Spine-DCAN-Date
 Please partition the data from the downloaded **"Spine-DCAN"** into **Train**, **Vali** and **Test** folder. 
 
 ```bash
-├── dataset(old)(old)
+├── dataset
 │     ├──Train
 │     │   ├──p[*]
 │     │   │  ├──aug[*].pt
@@ -44,11 +44,6 @@ Please partition the data from the downloaded **"Spine-DCAN"** into **Train**, *
 │     │   ├──***
 ```
 
-## Pretrained SymTC models
-
-Below is the download link for the pretrained SymTC model checkpoint:
-
-[**SymTC Checkpoint**](https://drive.google.com/drive/folders/1NLWaRFqM1L-d8jpd7KOVP3M_nK-S03ve?usp=sharing)
 
 ## Train/Evaluation
 

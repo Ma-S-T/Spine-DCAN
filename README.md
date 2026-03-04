@@ -51,7 +51,7 @@ Please partition the data from the downloaded **"Spine-DCAN"** into **Train**, *
 
 Execute the command to initiate the training of the model.
 
-`python train.py --net_name Spine-DCAN --num_classes 12 --max_epochs 500 --batch_size_train 3 --batch_size_eval 3 --base_lr 0.0001 --device cuda:0`
+`python train.py --net_name Spine-DCAN --num_classes 12 --max_epochs 300 --batch_size_train 3 --batch_size_eval 3 --base_lr 0.0001 --device cuda:0`
 
 Adjust the values for _max_epochs_, _batch_size_train_, _batch_size_eval_, _device_, and any other relevant parameters as necessary.
 
